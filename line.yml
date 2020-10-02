@@ -1,0 +1,20 @@
+include_newlines: |
+  exactly as you see
+  will appear these three
+  lines of poetry
+
+# result will be 'exactly as you see\nwill appear these three\nlines of poetry\n'
+
+fold_newlines: >
+  this is really a
+  single line of text
+  despite appearances
+
+# result will be 'this is really a single line of text despite appearances\n'
+
+fold_newlines_without_newlines_at_the_end: >-
+  this is really a
+  single line of text
+  despite appearances
+
+# result will be 'this is really a single line of text despite appearances'

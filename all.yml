@@ -1,0 +1,7 @@
+---
+# all.yml
+- tabitha:
+    name: Tabitha Bitumen
+    job: Developer
+    skills:
+      - lisp fortran erlang python C C++ Java JavaScript HTML CSS Rust Golang VB Swift

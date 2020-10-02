@@ -1,0 +1,23 @@
+# prefix_list_value: &prefix_list_value
+#   - seq: 10
+#     prefix: 192.168.1.0/24
+#   - seq: 20
+#     prefix: 192.168.2.0/24
+#   - seq: 30
+#     prefix: 192.168.3.0/24
+
+# ip_prefix_list:
+#   - name: permit_func_xyz
+#     prefix_list: *prefix_list_value
+#   - name: permit_func_abc
+#     prefix_list: *prefix_list_value
+
+---
+foo:
+  <<: &anchor
+    K1: "One"
+  K2: "Two"
+
+bar:
+  <<: *anchor
+  K3: "Three"
